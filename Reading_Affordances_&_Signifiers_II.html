@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <style>
+      .title {
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .blog-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .blog-container {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin: 20px;
+        flex: 0 0 calc(90% - 40px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .blog-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .blog-summary h2,
+      .blog-summary h3 {
+        margin: 0;
+        padding: 0;
+      }
+      .blog-summary h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .blog-summary h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-style: italic;
+      }
+      .blog-summary p {
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">Michael Sanders</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Michael Sanders</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="project.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="blog.html" onclick="toggleMenu()">Blogs</a></li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="blogs">
+      <h1 class="title">Affordances & Signifiers</h1>
+      <div class="blog-details-container">
+        <div class="blog-container color-container">
+          <div class="article-container">
+            <img
+              src="#"
+              alt="Affordances & Signifiers symbols"
+              class="blog-img"
+            />
+          </div>
+          <div class="blog-summary">
+            <h2 class="experience-sub-title blog-title">Approximate Analogy</h2>
+            <h3>
+              Navigating a software interface is like walking through a modern
+              art gallery.
+            </h3>
+
+            <p>
+              When I walk into an art gallery, the layout, the lighting, and
+              even the placement of artworks guide my journey. I know where to
+              start, where to pause, and how to find my way around. Similarly,
+              in software design, the layout, icons, and flow guide a user's
+              journey. If a piece of art is placed haphazardly in a corner
+              without proper lighting or context, it's just like a crucial
+              software function hidden away in a menu where users can't find it.
+            </p>
+            <span></span>
+            <p>
+              As I dive deeper into CS, especially with my passion for UX and
+              the arts, I've realized that designing an intuitive user
+              experience isn't just about algorithms and code. It's also an art
+              form. Chapter 1 of "The Design of Everyday Things" truly resonated
+              with me. Just like you wouldn't place a priceless painting in the
+              dimmest part of the gallery, you shouldn't hide an essential
+              software function under layers of complex menus. This chapter
+              reminded me of why I love frontend development and UX/UI: it's the
+              beautiful blend of logic and aesthetics.
+            </p>
+
+            <p>
+              As I move forward in my career, keeping these principles in mind
+              is paramount. I don't just want to create functional software; I
+              want to craft experiences that are intuitive, delightful, and
+              memorable for users. That's the real artistry in UX/UI design.
+            </p>
+          </div>
+          <div class="btn-container"></div>
+        </div>
+
+        <!-- You can duplicate the above block for more blogs, just remember to update the relevant details such as image paths, titles, and excerpts. -->
+      </div>
+
+      <div class="blog-details-container">
+        <div class="blog-container color-container">
+          <div class="article-container">
+            <img
+              src="#"
+              alt="Affordances & Signifiers symbols"
+              class="blog-img"
+            />
+          </div>
+          <div class="blog-summary">
+            <h2 class="experience-sub-title blog-title">Approximate Analogy</h2>
+            <h3>
+              Using a software application is like playing a musical instrument.
+            </h3>
+
+            <p>
+              When you approach a piano for the first time, its design — the
+              white and black keys, the pedals, and the layout — gives you clues
+              about how to interact with it. The keys are not just affordances;
+              they signify where and how to press to produce sound. The
+              difference between the black and white keys provides constraints,
+              helping to guide the user. The immediate sound after pressing a
+              key is feedback, indicating that an action has taken place.
+            </p>
+            <span></span>
+            <p>
+              Similarly, in a software application, buttons, sliders, and menus
+              are like the keys and pedals of a piano. They show users how to
+              interact, guide their actions through constraints, offer feedback
+              after actions, and their placement (mapping) helps users
+              intuitively understand their functions.
+            </p>
+
+            <p>
+              As I marry my love for the arts with Computer Science, I can't
+              help but see the striking parallels between playing a musical
+              instrument and navigating a digital interface. The way a user
+              feels when they encounter an intuitive interface is similar to how
+              a musician feels when they seamlessly play a familiar tune.
+            </p>
+            <p>
+              As I aspire to delve into frontend development and UX/UI, these
+              concepts will be my guiding principles. I want to create digital
+              'instruments' that feel natural, provide immediate feedback, and
+              allow users to 'play' without friction. Imagine designing a
+              software application where users, like musicians, find their
+              rhythm, flow, and even moments of joy. That's the harmonious
+              symphony I want to compose in the realm of UX/UI design.
+            </p>
+          </div>
+          <div class="btn-container"></div>
+        </div>
+
+        <!-- You can duplicate the above block for more blogs, just remember to update the relevant details such as image paths, titles, and excerpts. -->
+      </div>
+      <footer>
+        <nav>
+          <div class="nav-links-container">
+            <ul class="nav-links">
+              <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#experience">Experience</a></li>
+              <li><a href="project.html">Projects</a></li>
+              <li><a href="blog.html">Blogs</a></li>
+              <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+        <p>Copyright &#169; 2023 Michael Sanders. All Rights Reserved.</p>
+      </footer>
+    </section>
+  </body>
+</html>

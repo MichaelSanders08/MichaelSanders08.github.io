@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <style>
+      .title {
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .blog-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .blog-container {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin: 20px;
+        flex: 0 0 calc(90% - 40px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .blog-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .blog-summary h2,
+      .blog-summary h3 {
+        margin: 0;
+        padding: 0;
+      }
+      .blog-summary h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .blog-summary h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-style: italic;
+      }
+      .blog-summary p {
+        margin-bottom: 15px;
+      }
+      .blog-summary ul {
+        list-style-type: disc; /* Ensures the bullet points are visible */
+        padding-left: 40px; /* Adjust this value as needed to increase or decrease the indentation */
+      }
+
+      .blog-summary li {
+        margin-bottom: 10px; /* Adds some space between list items for better readability */
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">Michael Sanders</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Michael Sanders</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="project.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="blog.html" onclick="toggleMenu()">Blogs</a></li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="blogs">
+      <h1 class="title">Colors</h1>
+      <div class="blog-details-container">
+        <div class="blog-container color-container">
+          <div class="article-container">
+            <img
+              src="#"
+              alt="Affordances & Signifiers symbols"
+              class="blog-img"
+            />
+          </div>
+          <div class="blog-summary">
+            <h2 class="experience-sub-title blog-title">Word Journal</h2>
+            <h3>
+              The Complete Color Harmony, Pantone Edition: Expert Color
+              Information for Professional Results. ISBN 9781631592966
+            </h3>
+            <h4>Word: Iridescent</h4>
+            <p>
+              The section "Complex Colors" on pages 22 & 23 dives deep into the
+              idea of colors that aren't static or singular in their appearance.
+              Colors that change with light, context, or even the angle from
+              which they are viewed. I chose the word "iridescent" because it
+              encapsulates the essence of these complex colors: the dynamic,
+              ever-changing hues reminiscent of a butterfly's wing, a peacock's
+              feather, or the shimmer of a seashell.
+            </p>
+            <p>
+              As a professional, understanding and appreciating the depth,
+              allure, and implications of such colors is essential. They have
+              applications ranging from the cosmetic industry to safety
+              equipment, and they capture human attention in a way that static
+              colors might not. This means they can be powerful tools in design,
+              advertising, and any field where visual appeal and attention are
+              paramount. Understanding the human fascination with these colors,
+              and knowing how and when to use them, can be a game-changer in
+              visual projects.
+            </p>
+            <div class="btn-container"></div>
+          </div>
+        </div>
+        <!-- You can duplicate the above block for more blogs, just remember to update the relevant details such as image paths, titles, and excerpts. -->
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p>Copyright &#169; 2023 Michael Sanders. All Rights Reserved.</p>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

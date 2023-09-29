@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Sanders: Blog</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <style>
+      .title {
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .blog-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .blog-container {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin: 20px;
+        flex: 0 0 calc(90% - 40px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .blog-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .blog-summary h2,
+      .blog-summary h3 {
+        margin: 0;
+        padding: 0;
+      }
+      .blog-summary h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .blog-summary h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-style: italic;
+      }
+      .blog-summary p {
+        margin-bottom: 15px;
+      }
+      .blog-summary ul {
+        list-style-type: disc; /* Ensures the bullet points are visible */
+        padding-left: 40px; /* Adjust this value as needed to increase or decrease the indentation */
+      }
+
+      .blog-summary li {
+        margin-bottom: 10px; /* Adds some space between list items for better readability */
+        padding-left: 20px;
+        text-indent: -20px;
+      }
+
+      .blog-summary ol {
+        padding-left: 20px;
+        text-indent: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">Michael Sanders</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Michael Sanders</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="project.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="blog.html" onclick="toggleMenu()">Blogs</a></li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="blogs">
+      <h1 class="title">Mockups</h1>
+      <div class="blog-details-container">
+        <div class="blog-container color-container">
+          <div class="article-container">
+            <img
+              src="#"
+              alt="Affordances & Signifiers symbols"
+              class="blog-img"
+            />
+          </div>
+          <div class="blog-summary">
+            <h2 class="experience-sub-title blog-title">
+              Tutorial: Crafting an Effective Mockup
+            </h2>
+            <h3>Visualizing Aspirations in Design & Beyond</h3>
+            <p>
+              Norman describes mockups as a “means to visualize and test ideas
+              without fully realizing them.” This is an amazing insight. In both
+              design and life, isn't that what we often strive for? To visualize
+              our aspirations sometime before even attempting to chase them?
+              Just as a mockup provides a tangible or digital representation,
+              allowing designers to see potential pitfalls or successes, it
+              mirrors how we often mentally visualize scenarios in li fe before
+              making them a reality. The essence of a mockup teaches us the
+              importance of preparation, iteration, and anticipation in both
+              design and our daily lives.
+            </p>
+
+            <ol>
+              <li>
+                <strong>Purpose First:</strong> Begin by understanding the core
+                problem and your target audience. What are you attempting to
+                convey or solve with your design?
+              </li>
+              <li>
+                <strong>Choose Your Tool:</strong> Depending on your comfort
+                level, tools like Figma, Adobe XD, or even traditional
+                sketchbooks can be your starting point. Remember, the medium
+                isn't as important as the message.
+              </li>
+              <li>
+                <strong>Iterate, Iterate, Iterate:</strong> This isn’t a
+                one-and-done situation. Create your initial mockup, take a step
+                back, reflect, and refine based on feedback and personal
+                insights. Mockups should evolve as they're honed.
+              </li>
+              <li>
+                <strong>Seek Feedback:</strong> This is where reflection truly
+                comes into play. Engage with peers, potential users, or even
+                just someone unfamiliar with your project. Their insights could
+                open doors you hadn't considered.
+              </li>
+              <li>
+                <strong>Enjoy the Journey:</strong> As with most design
+                processes, creating a mockup should be as much about the journey
+                as the end result. Cherish the iterations, the missteps, and the
+                breakthroughs.
+              </li>
+            </ol>
+          </div>
+
+          <div class="btn-container"></div>
+        </div>
+
+        <!-- You can duplicate the above block for more blogs, just remember to update the relevant details such as image paths, titles, and excerpts. -->
+
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p>Copyright &#169; 2023 Michael Sanders. All Rights Reserved.</p>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Sanders: Blog</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <style>
+      .title {
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .blog-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .blog-container {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin: 20px;
+        flex: 0 0 calc(90% - 40px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .blog-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .blog-summary h2,
+      .blog-summary h3 {
+        margin: 0;
+        padding: 0;
+      }
+      .blog-summary h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .blog-summary h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-style: italic;
+      }
+      .blog-summary p {
+        margin-bottom: 15px;
+      }
+      .blog-summary ul {
+        list-style-type: disc; /* Ensures the bullet points are visible */
+        padding-left: 40px; /* Adjust this value as needed to increase or decrease the indentation */
+      }
+
+      .blog-summary li {
+        margin-bottom: 10px; /* Adds some space between list items for better readability */
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">Michael Sanders</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Michael Sanders</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="project.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="blog.html" onclick="toggleMenu()">Blogs</a></li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="blogs">
+      <h1 class="title">Shneiderman & Info Organization</h1>
+      <div class="blog-details-container">
+        <div class="blog-container color-container">
+          <div class="article-container">
+            <img
+              src="#"
+              alt="Affordances & Signifiers symbols"
+              class="blog-img"
+            />
+          </div>
+          <div class="blog-summary">
+            <h2 class="experience-sub-title blog-title">Freeform</h2>
+            <h3>Shneiderman's Philosophies</h3>
+            <h3 class="blog-subtitle">1. Bridging Multiple Data Types</h3>
+            <ul class="blog-points">
+              <li>
+                <strong>Diverse Data Platforms</strong>: The need to create
+                tools that can handle various data types, from 1-dimensional to
+                tree and network data.
+              </li>
+              <li>
+                <strong>Beyond Research Prototypes</strong>: Real-world data
+                doesn't fit into one box. Successful products should adapt to a
+                all data types.
+              </li>
+            </ul>
+
+            <h3 class="blog-subtitle">
+              2. The Visual Information-Seeking Mantra
+            </h3>
+            <ul class="blog-points">
+              <li>
+                <strong>Dynamic Landscapes</strong>: Approach information as
+                dynamic landscapes that should be able to be navigated at every
+                layer.
+              </li>
+              <li>
+                <strong>Fundamental Principle</strong>: "Overview first, zoom
+                and filter, then details on demand." This is a structured yet
+                flexible way to handle navigating data.
+              </li>
+              <li>
+                <strong>Taxonomy Blueprint</strong>: The task-by-data taxonomy
+                maps many data types with their potential tasks, helping
+                developers and designers align data with user needs.
+              </li>
+            </ul>
+
+            <h3 class="blog-subtitle">3. The Art of Visualization</h3>
+            <ul class="blog-points">
+              <li>
+                <strong>Language Beyond Aesthetics</strong>: Visualization
+                communicates patterns and insights that raw data can't. It's a
+                language in its own right.
+              </li>
+              <li>
+                <strong>Mastering Tools</strong>: The need for tools like
+                dynamic queries and treemaps to navigate this visual language.
+              </li>
+            </ul>
+
+            <p>
+              The digital universe is vast. Ben Shneiderman, in his paper,
+              emphasizes the importance of evolving our visualization
+              techniques. With computers as our "magic lens" to filter and
+              present data, there is both an opportunity and responsibility for
+              innovators to refine digital interactions. Digital engineering is
+              still a new discipline, and with that comes constant innovation
+              with its interactions.
+            </p>
+          </div>
+          <div class="btn-container"></div>
+        </div>
+
+        <!-- You can duplicate the above block for more blogs, just remember to update the relevant details such as image paths, titles, and excerpts. -->
+
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p>Copyright &#169; 2023 Michael Sanders. All Rights Reserved.</p>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

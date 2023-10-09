@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Sanders: Blog</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <style>
+      .title {
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .blog-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .blog-container {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin: 20px;
+        flex: 0 0 calc(90% - 40px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .blog-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .blog-summary h2,
+      .blog-summary h3 {
+        margin: 0;
+        padding: 0;
+      }
+      .blog-summary h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .blog-summary h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-style: italic;
+      }
+      .blog-summary p {
+        margin-bottom: 15px;
+      }
+      .blog-summary ul {
+        list-style-type: disc; /* Ensures the bullet points are visible */
+        padding-left: 40px; /* Adjust this value as needed to increase or decrease the indentation */
+      }
+
+      .blog-summary li {
+        margin-bottom: 10px; /* Adds some space between list items for better readability */
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">Michael Sanders</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Michael Sanders</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="project.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="blog.html" onclick="toggleMenu()">Blogs</a></li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="blogs">
+      <h1 class="title">Inspiration from Art</h1>
+      <div class="blog-details-container">
+        <div class="blog-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/WaterInspo.jpg"
+              alt="Photo of Art Piece"
+              class="blog-img"
+            />
+          </div>
+          <div class="blog-summary">
+            <h2 class="experience-sub-title blog-title">
+              Analyzing a Piece and Creating a UI Sketch
+            </h2>
+            <h3>Calida Rawles's "High Tide, Heavy Armor"</h3>
+            <p>
+              In this post, I will be analyzing a piece of art and using it as
+              inspiration for a UI sketch. I will discuss the three areas of
+              analysis, and how they inspire me.
+            </p>
+            <p>
+              Calida Rawles's painting "High Tide, Heavy Armor" (2021) sheds
+              light on the serious issues of racial injustice and police
+              violence, particularly inspired by Kurt Reinhold's death in 2020.
+              Using acrylic paints on a canvas, Rawles shows a man resembling
+              Reinhold, bringing attention to the dangers Black individuals
+              often face with law enforcement. This piece of art, now held at
+              the San Francisco Museum of Modern Art, goes beyond just being a
+              painting—it tells a story of the ongoing struggle against racial
+              injustice and the need for change.
+            </p>
+            <p>
+              I chose this photo because this is a piece that really is visually
+              captivating. Every time that I see it. It is balanced, simple, and
+              sticks to the point. The leading lines (waves) in this piece help
+              guide your eyes to the subject and there are no distractions. I
+              think it is inspiring because its elements are in a different
+              domain. Even though, its intent is still to communicate just like
+              it is in design. The element of communication is kin in both,
+              which was the thing that was the most inspiring. The question is
+              how do you communicate something in a visual language? The most
+              important response to this question is what this piece and design
+              have in common. It is visually simple, guiding, and direct.
+            </p>
+            <h3>Analysis of the Art:</h3>
+            <p>
+              <strong>Picture Layout:</strong> This painting has a strong layout
+              that easily grabs our attention. The person is placed right in the
+              middle, but the waves around them make the whole scene really
+              lively. The waves create paths that our eyes naturally follow,
+              leading us right to the person. It's like the waves are a roadmap
+              for our eyes. This leads us to the subject despite where the waves
+              catch your attention due to the sharp contrast.
+            </p>
+
+            <p>
+              <strong>Colors:</strong> Rawles used a simple color pallet with
+              just shades of blue and brown. These colors make the painting feel
+              calm and easy to look at. The way the light shines on the waves
+              and the person is soft but still makes them stand out. Our eyes
+              are attracted to the highlights in an image, and then the lines of
+              the waves (created by the shades of the color) or the contrast of
+              color lead us to the subject.
+            </p>
+
+            <p>
+              <strong>Conveying a Message:</strong> This painting makes people
+              feel deep emotions. The person in the middle of the waves can
+              represent many ideas. Every viewer might see a different story in
+              this painting, and that's what makes it special.
+            </p>
+            <p>
+              A good website or app, like the painting, is more than just nice
+              to look at. It should connect with users and make them think and
+              feel. It should be designed in a way to do this, just like how the
+              artist used layout, colors, and light to bring the painting to
+              life. Each user should feel like the website or app is speaking
+              directly to them, sharing the correct things that the site is
+              trying to communicate.
+            </p>
+
+            <h3>UI Sketch:</h3>
+            <p>
+              For my sketch, I wanted to think about a site that is focused on
+              informing the user about racial injustice, police violence, and
+              legal education. Keeping in theme with the painting, how would the
+              same message be represented as a user interface? This is what I
+              came up with:
+            </p>
+            <img
+              src="./assets/sketch1.jpg"
+              alt="Photo of UI Sketch"
+              class="blog-img"
+            />
+            <img
+              src="./assets/sketch2.jpg"
+              alt="Photo of UI Sketch"
+              class="blog-img"
+            />
+            <p>
+              I tried to make the design allow users to share and read stories
+              related to social justice issues, fostering a community of support
+              and awareness. I think the design captures the essence of the
+              painting by incorporating the same balance between simplicity and
+              emotion. The homepage features quotes that transition smoothly, an
+              about section, and an impactful visual centerpiece akin to the
+              central figure in the painting. The lines are designed to help
+              guide the users eyes down the page as well as help give signifiers
+              to where they are and what they should look at next.
+            </p>
+            <h3>Insightful Learning</h3>
+            <p>
+              Through this process, the realization dawns that art and UI design
+              are deeply intertwined; both are visual mediums aiming to convey a
+              narrative and evoke emotion. The painting’s ability to communicate
+              complex emotions and stories without words has underscored the
+              importance of visual storytelling within UI design. Every element,
+              from color to layout, becomes a crucial part of the narrative,
+              each contributing to the user's journey and experience.
+            </p>
+          </div>
+
+          <div class="btn-container"></div>
+        </div>
+
+        <!-- You can duplicate the above block for more blogs, just remember to update the relevant details such as image paths, titles, and excerpts. -->
+
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p>Copyright &#169; 2023 Michael Sanders. All Rights Reserved.</p>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

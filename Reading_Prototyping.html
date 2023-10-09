@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Sanders: Blog</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <style>
+      .title {
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .blog-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .blog-container {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin: 20px;
+        flex: 0 0 calc(90% - 40px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .blog-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .blog-summary h2,
+      .blog-summary h3 {
+        margin: 0;
+        padding: 0;
+      }
+      .blog-summary h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .blog-summary h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-style: italic;
+      }
+      .blog-summary p {
+        margin-bottom: 15px;
+      }
+      .blog-summary ul {
+        list-style-type: disc; /* Ensures the bullet points are visible */
+        padding-left: 40px; /* Adjust this value as needed to increase or decrease the indentation */
+      }
+
+      .blog-summary li {
+        margin-bottom: 10px; /* Adds some space between list items for better readability */
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">Michael Sanders</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Michael Sanders</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="project.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="blog.html" onclick="toggleMenu()">Blogs</a></li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="blogs">
+      <h1 class="title">Prototyping</h1>
+      <div class="blog-details-container">
+        <div class="blog-container color-container">
+          <div class="article-container">
+            <img src="#" alt="relevant image to article" class="blog-img" />
+          </div>
+          <div class="blog-summary">
+            <h2 class="experience-sub-title blog-title">Word Journal</h2>
+            <h3>Narrative</h3>
+            <p>
+              When we think of a narrative, we think of stories that are
+              engaging, structured, and emotive. In a UI/UX career,
+              understanding the power of narrative is critical. But why?
+            </p>
+            <p>
+              Just like how humans have passed down information through stories
+              for generations, we still do today using digital interfaces. A
+              well-structured user experience should guide the user through a
+              journey, just like a good story. It should engage the user
+              emotionally and logically, making the interaction memorable and
+              intuitive. This is why many successful apps and websites have a
+              clear beginning (introduction to objective), a structured middle
+              (interactions), and a definitive end (finished objective). If a
+              UI/UX professional can harness the power of narrative, they can
+              create more effective and engaging user experiences.
+            </p>
+          </div>
+          <div class="btn-container"></div>
+        </div>
+
+        <!-- You can duplicate the above block for more blogs, just remember to update the relevant details such as image paths, titles, and excerpts. -->
+
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p>Copyright &#169; 2023 Michael Sanders. All Rights Reserved.</p>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

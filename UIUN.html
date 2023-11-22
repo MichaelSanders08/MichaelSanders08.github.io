@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Sanders: Blog</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <style>
+      .title {
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .blog-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .blog-container {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin: 20px;
+        flex: 0 0 calc(90% - 40px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .blog-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .blog-summary h2,
+      .blog-summary h3 {
+        margin: 0;
+        padding: 0;
+      }
+      .blog-summary h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .blog-summary h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-style: italic;
+      }
+      .blog-summary p {
+        margin-bottom: 15px;
+      }
+      .blog-summary ul {
+        list-style-type: disc; /* Ensures the bullet points are visible */
+        padding-left: 40px; /* Adjust this value as needed to increase or decrease the indentation */
+      }
+
+      .blog-summary li {
+        margin-bottom: 10px; /* Adds some space between list items for better readability */
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">Michael Sanders</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Michael Sanders</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="project.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="blog.html" onclick="toggleMenu()">Blogs</a></li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="blogs">
+      <h1 class="title">UIUN Summit Negotiation Reflection</h1>
+      <div class="blog-details-container">
+        <div class="blog-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/uiun.png"
+              alt="Affordances & Signifiers symbols"
+              width="500"
+              height="500"
+              class="blog-img"
+            />
+          </div>
+          <div class="blog-summary">
+            <h3>Introduction</h3>
+            <p>
+              Imagine a summit where designers from around the globe converge,
+              not just to share ideas but to forge a path towards a more
+              accessible digital world. This was the essence of the UIUN Summit.
+              It served as a melting pot of creativity and advocacy in the realm
+              of UI accessibility. Our challenge? To rethink the user interface
+              of the Sarpy County election commission site, specifically
+              focusing on streamlining the process of registering for a mail-in
+              ballot.
+            </p>
+
+            <h3>Representing the Intellectual Disabilities Community</h3>
+            <p>
+              As a representative of the intellectual disabilities community, I
+              was tasked with addressing their unique UI/UX needs. This
+              demographic experiences the world in a way that often requires a
+              more intuitive and straightforward digital navigation. Their needs
+              are specific yet universal: content with a Flesch Kincaid reading
+              ease score of 90 or above for clear understanding, a simplified
+              display to avoid overwhelming the user, a guided process with
+              visual aids for multi-step tasks, and large, easily interactable
+              elements for those with motor impairments. These requirements,
+              while tailored for this community, have a universal appeal,
+              simplifying digital interaction for all users.
+            </p>
+
+            <h3>The Summit: Negotiating and Prioritizing</h3>
+            <p>
+              The summit was full negotiations and collaborations. We were
+              tasked with the task of prioritizing the collective requirements
+              of all groups. It was a delicate balancing act – advocating for
+              our community's needs while ensuring the final design didn't
+              exclude others. The most intriguing part was witnessing the
+              defense of specific requirements that could easily have been
+              broadened to encompass a wider range of needs.
+            </p>
+            <p>
+              My proposal found natural allies in teams representing rural
+              communities, PTSD, and anxiety sufferers. Our combined advocacy
+              led to significant priority changes, highlighting the universality
+              of our design principles.
+            </p>
+
+            <h3>Insights and Reflections</h3>
+            <p>
+              The highlight for me was observing the debate and eventual
+              resolution between the rural and Gen Z representatives,
+              particularly over issues like internet load time. This discussion
+              underscored the importance of considering a diverse range of needs
+              in UI design.
+            </p>
+            <p>
+              My greatest takeaway from the summit is the concept that inclusive
+              design is about not excluding anyone. It may seem
+              counterintuitive, but focusing on not leaving anyone out, rather
+              than on including specific groups, leads to more universally
+              accessible designs. This experience was a real-world emulation of
+              the dynamics in UI design teams, emphasizing the iterative and
+              collaborative nature of the design process.
+            </p>
+
+            <h3>Conclusion</h3>
+            <p>
+              The UIUN Summit was more than just a design exercise; it was full
+              of representations of the challenges and triumphs that happen in
+              the field of UI/UX. It reinforced the idea that creating digital
+              spaces that are accessible and user-friendly for everyone is not
+              just a noble goal but an achievable one. The insights gained here
+              are not just theoretical but practical tools that I intend to
+              carry forward in my journey in design.
+            </p>
+          </div>
+
+          <div class="btn-container"></div>
+        </div>
+
+        <!-- You can duplicate the above block for more blogs, just remember to update the relevant details such as image paths, titles, and excerpts. -->
+
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p>Copyright &#169; 2023 Michael Sanders. All Rights Reserved.</p>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

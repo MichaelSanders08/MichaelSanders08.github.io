@@ -286,6 +286,12 @@ section {
   display: flex;
 }
 
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2.5rem;
+}
+
 .about-pic {
   border-radius: 2rem;
 }
@@ -343,6 +349,7 @@ section {
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
+  flex-grow: 0;
 }
 
 article {

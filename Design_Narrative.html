@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Sanders: Blog</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <style>
+      .blog-summary {
+        max-width: 40rem;
+        margin-left: 28%;
+      }
+      .title {
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .blog-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .blog-container {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin: 20px;
+        flex: 0 0 calc(90% - 40px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .blog-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .blog-summary h2,
+      .blog-summary h3 {
+        margin: 0;
+        padding: 0;
+      }
+      .blog-summary h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .blog-summary h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-style: italic;
+      }
+      .blog-summary p {
+        margin-bottom: 15px;
+      }
+      .blog-summary ul {
+        list-style-type: disc; /* Ensures the bullet points are visible */
+        padding-left: 40px; /* Adjust this value as needed to increase or decrease the indentation */
+      }
+      .blog-summary ol {
+        list-style-type: disc; /* Ensures the bullet points are visible */
+        padding-left: 40px; /* Adjust this value as needed to increase or decrease the indentation */
+      }
+      .blog-summary li {
+        margin-bottom: 10px; /* Adds some space between list items for better readability */
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">Michael Sanders</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Michael Sanders</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="project.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="blog.html" onclick="toggleMenu()">Blogs</a></li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="blogs">
+      <h1 class="title">Design Narrative: Spoitube</h1>
+      <div class="blog-details-container">
+        <div class="blog-container color-container">
+          <div class="article-container"></div>
+          <div class="blog-summary">
+            <h3>Introduction</h3>
+            <p>
+              Okay. Let's say, in a hypothetical world, you were given the free
+              will to design anything that you wanted. What would you choose?
+              Would it be something personal to you? Would it be something
+              you've always dreamed of having yourself? Or would it be the start
+              of something you believe has the potential to be the next
+              Snapchat, Uber, or Spotify?
+            </p>
+
+            <p>
+              The beautiful thing about design is anyone can do it, but where do
+              you start? And how you progress is where the real challenge lies,
+              or for me, the fun.
+            </p>
+
+            <p>
+              I started with an idea that I had as a personal project. What
+              would this look like as a product on the market today? If it was
+              something that I would use, then there is a market for this, and
+              thus I have something that has the potential to add value to
+              users.
+            </p>
+            <p>
+              The idea was set and the design process began. The personal
+              project that this design project was based on would take a Spotify
+              playlist and convert it to a YouTube playlist. It would allow
+              anyone with access to YouTube to listen to the same songs on the
+              Spotify playlist on either YouTube or the YouTube Music app.
+            </p>
+            <p>
+              I wanted this product because my student discount for Spotify was
+              running out and as a YouTube connoisseur, I have a YouTube premium
+              subscription that comes with YouTube music. I needed to condense.
+              Who needs two music streaming services? So again, as a YouTube
+              connoisseur, the Spotify subscription had to go.
+            </p>
+            <h3>User Stories</h3>
+            <p>
+              I CAN be a user of this product, but even more so, I NEED to
+              understand the other perspective of alternate users. My story was
+              one perspective of the problem domain and in design, a common
+              phrase is the designer is not the user. This is the stage where I
+              asked how other people would use this product and what other
+              things outside of the main function would add more value to the
+              user interacting with this product. This led me to 2 user stories.
+            </p>
+            <ol>
+              <li>
+                Emily joins a music club at school that shares new music. They
+                use YouTube as their platform of choice. She uses the product to
+                move her eclectic Spotify playlist to participate in the club's
+                activities.
+              </li>
+              <li>
+                Robert wants to have all his music in one place. He currently
+                listens to most of his independent artists on YouTube to help
+                give them more revenue from YouTube's partner program. And other
+                artists on Spotify. He uses this product to have all his music
+                in one place for a cohesive library.
+              </li>
+            </ol>
+
+            <h3>Developing the North Star</h3>
+            <p>
+              The design now has a user base to build off of. Now let's give
+              ourselves a design foundation or a North Star. This North Star is
+              comprised of the values that we are going to try to portray in the
+              design and do well for our target users.
+            </p>
+            <p>
+              The values (in word form) that I chose as the North Star for this
+              design were: Exploration and Simplicity. I want to intrigue the
+              user to explore the other elements of the product freely, learn,
+              and find value outside of the main function to create a community
+              for the product. This is something that I wanted to encourage the
+              users to do because that is an element of making a product the
+              best it can be: the community that uses it. If I were to expand
+              the North Star values to three words, the third would surely add
+              community.
+            </p>
+            <p>
+              From this I decided to make two other “branches” of discovery:
+              Learn and Community. These will have equal importance to the main
+              transfer function in the hierarchy. I do not want to impede on the
+              freedom of exploration that is our north star. There will be
+              places where a user can explore and learn about different things
+              relevant to music: the link to why all users would be using this
+              product.
+            </p>
+            <p>
+              The essence of SpoiTube is to streamline the musical experience
+              across platforms, making it a breeze for users like Emily and
+              Robert to manage their playlists. For Emily, it removes the
+              friction of sharing her unique music finds with her school club.
+              No longer does she need to manually search and rebuild her
+              playlist on YouTube: SpoiTube automates this with precision.
+              Robert, on the other hand, finds harmony in his listening habits.
+              His support for indie artists on YouTube and his enjoyment of
+              mainstream Spotify hits are no longer at odds. SpoiTube unifies
+              his library, reinforcing his contribution to artist revenue while
+              simplifying his user experience. This isn’t just about
+              convenience; it's about enhancing the auditory journey of every
+              music lover, paving the way for a more connected and seamless
+              music-sharing culture and community.
+            </p>
+            <p>
+              I made the target device a web application, designed to be web
+              first, but with the ability to be responsive in the future. I
+              think about it as this product is something that you take time to
+              engage with on the web, like Medium or Reddit (where many users
+              interact on desktop), but also can be used on the go on any web
+              interface. I have just implemented the desktop variation in what I
+              am showing now, but it is still in fact, designed with the ability
+              to hold our design language on any device in mind.
+            </p>
+            <h3>Low-Fi Designs</h3>
+            <p>
+              Now that we have the elements for understanding the users and how
+              they interact with the problem domain, we can get to sketching!
+            </p>
+
+            <div class="article-container">
+              <img
+                src="./assets/SS1.png"
+                alt="Photo of Art Piece"
+                class="blog-img"
+              />
+            </div>
+            <div class="article-container">
+              <img
+                src="./assets/SS2.png"
+                alt="Photo of Art Piece"
+                class="blog-img"
+              />
+            </div>
+            <div class="article-container">
+              <img
+                src="./assets/SS3.png"
+                alt="Photo of Art Piece"
+                class="blog-img"
+              />
+            </div>
+            <div class="article-container">
+              <img
+                src="./assets/SS4.png"
+                alt="Photo of Art Piece"
+                class="blog-img"
+              />
+            </div>
+            <p>
+              The preliminary sketches reflect our core values: Exploration,
+              Simplicity, and Community. The interface is intuitively mapped
+              out, allowing users like Emily and Robert to navigate seamlessly.
+              Emily, with her eclectic taste, will find the 'Learn' and
+              'Community' sections invaluable for discovering new genres and
+              participating in discussions, potentially bringing new sounds to
+              her club. Robert's desire for a singular music repository is met
+              with ease as the sketches outline a straightforward process for
+              transferring playlists. The 'Transfer' button is prominent,
+              signifying its importance and utility. Both users will appreciate
+              the uncomplicated layout that encourages exploration without
+              overwhelming them, fostering a community of shared musical
+              interests.
+            </p>
+            <h3>Mockups</h3>
+            <div class="iframe-container">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="650"
+                height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FNhfQIQXKK64S8vKn22fAYW%2FCodeNAME%253A-Spotube%3Ftype%3Ddesign%26node-id%3D137%253A2%26mode%3Ddesign%26t%3DH9vqnStTTUHVjQuV-1"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <h3>Feedback and Iteration</h3>
+
+            <p>
+              The in-class peer review was an illuminating chapter in SpoiTube's
+              story. The proximity of the login buttons was a point of
+              contention, prompting a redesign to make more intuitive the linear
+              nature of that stage of the user flow. The transfer process
+              received acclaim for its streamlined approach, a testament to our
+              commitment to error prevention. Yet, the color scheme failed to
+              entice exploration, a vital spark that was intended but was
+              missing from the visuals. Each critique was a stepping stone,
+              guiding us to a design that stays true to our values while
+              inviting users to embark on a journey of musical consolidation.
+            </p>
+            <h3>Prototype</h3>
+            <div class="iframe-container">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="650"
+                height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNhfQIQXKK64S8vKn22fAYW%2FCodeNAME%253A-Spotube%3Fpage-id%3D232%253A2%26type%3Ddesign%26node-id%3D234-1176%26viewport%3D109%252C291%252C0.04%26t%3DBsKexYsOMHUlIQGP-1%26scaling%3Dcontain%26starting-point-node-id%3D234%253A1176%26mode%3Ddesign"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <p>
+              Our prototype has undergone a good amount of critique, emerging
+              with actionable insights. The button hierarchy needed
+              restructuring, with a suggestion to elevate the 'Transfer'
+              function, signifying it as the main thing that the site is for.
+              The font sizes on the playlist transfer page were too big. The
+              'Manage' button's background color could benefit from a lighter
+              touch, a nod to our pursuit of simplicity. Our efforts to make the
+              linear nature of the login buttons have been noted, yet there was
+              still room to refine these signifiers further. Introducing a
+              subtitle on the top bar was an echoed sentiment, a compass for new
+              users to grasp SpoiTube's purpose at first glance as well as other
+              images, logos, and the developments of “clouds” to aid in
+              communicating what you can do and what the site is for on the home
+              page.
+            </p>
+            <h3>User Testing</h3>
+
+            <p>
+              For user testing I interviewed 6 people from ages 15-29 and
+              ranging demograppics about SpoiTube. Each interview took, on
+              average, 40 minutes and I gain infomation about them, their music
+              interest, and how they interacted with SpoiTube. I walked them
+              through 4 tasks: Transfer Songs from Spotify to YouTube, Interact
+              with the Community, Explore the Learn Section, and Find the FAQ
+              Page. After walking through tasks, I gave the opportunity for them
+              to as any questions they had and for them to give any thoughts and
+              preferences on the product. Each time this was the most
+              interesting part because I learned a lot about how information
+              from the pre-test questions were linked to a particular desire or
+              perspective on a feature. Getting more users to test would only
+              improve the quality if this product.
+            </p>
+
+            <p>After user tesing I committed to some changes:</p>
+            <ul>
+              <li>
+                <strong>Refine CTA Button Copy:</strong>
+                <p>
+                  <em>Fix:</em> Revise CTA buttons to be more
+                  action-oriented.<br />
+                  <em>Justification:</em> Enhances user assurance and error
+                  prevention, increasing retention and satisfaction.
+                </p>
+              </li>
+              <li>
+                <strong>Redesign Labels and Instructions for Clarity:</strong>
+                <p>
+                  <em>Fix:</em> Use direct text labels and concise
+                  instructions.<br />
+                  <em>Justification:</em> Improves user understanding and
+                  navigation efficiency.
+                </p>
+              </li>
+              <li>
+                <strong>Overhaul Rating System:</strong>
+                <p>
+                  <em>Fix:</em> Align with familiar models like numerical
+                  ratings or like/dislike systems. <br />
+                  <em>Justification:</em> Reduces learning curve, enhances user
+                  engagement.
+                </p>
+              </li>
+              <li>
+                <strong>Redesign Homepage:</strong>
+                <p>
+                  <em>Fix:</em> Implement clear messaging and visual cues.<br />
+                  <em>Justification:</em> Sets the stage for the service,
+                  reduces bounce rates, fosters curiosity.
+                </p>
+              </li>
+              <li>
+                <strong>Enhance Central Design Elements:</strong>
+                <p>
+                  <em>Fix:</em> Redesign central box and key elements to be
+                  visually appealing. <br /><em>Justification:</em> Draws users
+                  in, supports intuitive navigation, crucial for positive user
+                  experience.
+                </p>
+              </li>
+            </ul>
+            <h3>Challenge of Design</h3>
+            <p>
+              Navigating the color scheme proved to be a designer's dilemma,
+              teetering between minimalism and vibrancy. The feedback was as
+              varied as a palette, with no clear favorite emerging from the user
+              sessions and other feedback. Ultimately, I anchored my decision in
+              the feedback that resonated most frequently: colors that were
+              subtle, unobtrusive, yet conducive to a modern aesthetic. The
+              backdrop, initially a canvas of bland white, evolved into a
+              textured landscape upon users' insights. It's a delicate balance,
+              ensuring the space feels alive without veering into visual noise.
+              This journey underscored a cardinal design truth—empathy overrides
+              personal preference, and the user's voice is the guiding light.
+            </p>
+            <p>
+              The top bar, a compass for navigation, was a challenge of
+              restraint and foresight. Every element had to justify its
+              presence, every icon a purpose. The decision-making was meticulous
+              and involved tracing user journeys and aligning them with our
+              North Star values. The button copy, initially not sufficient,
+              evolved through the feedback to strike a balance between brevity
+              and clarity, ensuring each word guided the user intuitively.
+            </p>
+            <p>
+              The triad of the main pages—Transfer, Learn, Community—stands firm
+              in its commitment to our values. It represents the freedom
+              intrinsic to our design, a freedom we chose not to compromise.
+            </p>
+
+            <h3>Reflection</h3>
+            <p>
+              Reflecting on the SpoiTube project, it's been a profound journey
+              from a personal need to a service that can touch the lives of
+              many. The process was as much about understanding others as it was
+              about translating my needs into a universal solution. With every
+              sketch and prototype iteration, the values of Exploration,
+              Simplicity, and Community became more ingrained in the design,
+              guiding each decision towards a product that's not just
+              functional, but also a joy to use. It's been a reminder that
+              design is never static; it's a living process that evolves with
+              its users. SpoiTube stands as a testament to the idea that a
+              designer's work is never done; there's always room to grow, to
+              adapt, and to anticipate the future needs of our ever-expanding
+              community of music lovers.
+            </p>
+            <p>
+              Design is a journey without a final destination. While SpoiTube
+              now encapsulates a moment of completion, the reality is that it's
+              merely a snapshot of an ongoing evolution. The future beckons with
+              further user testing, each session a potential goldmine for
+              insights. The quest for refinement is relentless. Building out of
+              the current framework, the design will adapt, morph, and
+              grow—responsive not just in screen size, but to the ever-changing
+              landscape of user needs and technological advances. SpoiTube's
+              design lifecycle mirrors life, cyclical and perpetual, with every
+              iteration a rebirth of ideas and possibilities.
+            </p>
+
+            <h3>Most Updated Prototype</h3>
+            <div class="iframe-container">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                width="650"
+                height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FNhfQIQXKK64S8vKn22fAYW%2FCodeNAME%253A-Spotube%3Fpage-id%3D445%253A2592%26type%3Ddesign%26node-id%3D445-3737%26viewport%3D-5084%252C-217%252C0.51%26t%3DRl43XbBvjOju3HFM-1%26scaling%3Dcontain%26starting-point-node-id%3D445%253A3737%26mode%3Ddesign"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="btn-container"></div>
+          </div>
+        </div>
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p>Copyright &#169; 2023 Michael Sanders. All Rights Reserved.</p>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

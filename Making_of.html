@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <style>
+      .title {
+        text-align: center;
+        margin-top: 2rem;
+      }
+      .blog-details-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .blog-container {
+        background-color: #f4f4f4;
+        padding: 20px;
+        margin: 20px;
+        flex: 0 0 calc(90% - 40px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .blog-img {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+      .blog-summary h2,
+      .blog-summary h3 {
+        margin: 0;
+        padding: 0;
+      }
+      .blog-summary h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+      .blog-summary h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-style: italic;
+      }
+      .blog-summary p {
+        margin-bottom: 15px;
+      }
+      .blog-summary ul {
+        list-style-type: disc; /* Ensures the bullet points are visible */
+        padding-left: 40px; /* Adjust this value as needed to increase or decrease the indentation */
+      }
+
+      .blog-summary li {
+        margin-bottom: 10px; /* Adds some space between list items for better readability */
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><a href="index.html">Michael Sanders</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Michael Sanders</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="project.html" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="blog.html" onclick="toggleMenu()">Blogs</a></li>
+          <li>
+            <a href="index.html#contact" onclick="toggleMenu()">Contact</a>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="blogs">
+      <h1 class="title">Making of My Portfolio</h1>
+      <div class="blog-details-container">
+        <div class="blog-container color-container">
+          <div class="blog-summary">
+            <h3>Clean, intuitive navigation</h3>
+            <p>
+              I made sure that navigation, articles, blogs, and overall
+              information display was not overstimulating and were always
+              present. you should be able to begin the navigation to any place
+              in the site from any place. Navigation is both at the top and
+              bottom of the pages and on the home page projects shown there is
+              linked to the project page as well.
+            </p>
+
+            <h3>Intentional color choices</h3>
+            <p>
+              I prefer a simple site for my portfolio to aid in the clean style
+              and to be able to have the use of color that is used that more
+              effecient. Most of the color is in the pictures and thumbnails of
+              the various post on the site and I like that as a contrast. Greys,
+              whites, and black are the colors that I chose to work with and
+              used them as layering and stucturing signifiers throughout the
+              site.
+            </p>
+
+            <h3>Harmony between affordances and signifiers</h3>
+            <p>
+              I think from my hover effects, bolding, page structure, copy, and
+              overall clean design there is good harmony in the signifier and
+              affordances. There are limited things that I am trying to signify
+              to a user so I think that the things that I can, I am doing a good
+              job at balancing.
+            </p>
+
+            <h3>Some consideration to accessibility</h3>
+            <p>
+              Images having alt text, navigation through tabing, color limiting,
+              and copy are all areas that I took into consideration as
+              accessibility areas that I wanted to unsure were inclusive.
+            </p>
+
+            <h3>Usability elements to help make content easier to digest</h3>
+            <p>
+              I used lists, bolds, breaks, and sections with titles to help make
+              content easier to digest. On the home page I have so ideally each
+              section will only be on the screen one at a time. That was me
+              thinking about a form of pagination in a vertical way.
+            </p>
+
+            <h3>Evidence of evolution</h3>
+            <p>
+              If you read some of the posts, you can see how I express my
+              learning and things that I will use practically and some of the
+              thing are even evidant in this site itself. When I talk about
+              practicality, this portfolio is the practice.
+            </p>
+
+            <h3>Proper attribution of others' work</h3>
+            <p>
+              In posts that I am referencing information from a book or video, I
+              link to it, or provice a citation at the beginning of post. I have
+              embedded videos in some of the posts as well as direct links to
+              articles that the post derived from.
+            </p>
+
+            <h3>intentional integration of your values</h3>
+            <p>
+              I like things to be clean, easy, and am straight forward person
+              that hold himself to a certain standards. I think that these
+              things are evident if you read the copy, navigate throught the
+              site, and notice my use of color.
+            </p>
+          </div>
+          <div class="btn-container"></div>
+        </div>
+
+        <!-- You can duplicate the above block for more blogs, just remember to update the relevant details such as image paths, titles, and excerpts. -->
+
+        <footer>
+          <nav>
+            <div class="nav-links-container">
+              <ul class="nav-links">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+              </ul>
+            </div>
+          </nav>
+          <p>Copyright &#169; 2023 Michael Sanders. All Rights Reserved.</p>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

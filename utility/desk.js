@@ -1,3 +1,4 @@
+import {makeBackup,validateBackup,storeBackup} from './backup.js';
 import {textStats,transformText,mediaSize,resize,hex,contrast,jsonFormat,cleanURL,scoreDecision,timerRemaining,validateBookmarks,finite} from './core.js';
 const $=id=>document.getElementById(id);
 const esc=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -130,3 +131,6 @@ function referenceTool(){
  $('import-references').onchange=async event=>{const file=event.target.files[0];if(!file)return;try{if(file.size>200000)throw new Error('Use a reference file smaller than 200 KB.');const items=validateBookmarks(JSON.parse(await file.text()));if(bookmarks.length&&!confirm('Replace your added references with this file?'))return;bookmarks=items;save('bookmarks',bookmarks);list();status('References imported.');}catch(error){status('Import failed: '+error.message);}finally{event.target.value='';}};list();
 }
 render();
+
+$('backup-desk').onclick=()=>{try{download('michael-utility-desk.json',JSON.stringify(makeBackup({pins,decision,bookmarks,timer}),null,2),'application/json');$('backup-status').textContent='Backup exported. It includes saved tools and a paused copy of your timer. Text and JSON drafts are excluded.';}catch(error){$('backup-status').textContent=error.message;}};
+$('restore-desk').onchange=async event=>{const file=event.target.files[0];if(!file)return;try{if(file.size>1_000_000)throw new Error('Choose a backup smaller than 1 MB.');const data=validateBackup(JSON.parse(await file.text()));if(!confirm(`Restore ${data.bookmarks.length} references, ${data.decision.alternatives.length} decision options and ${data.pins.length} pins? This replaces saved desk data. Export a backup first to keep the current desk.`))return;storeBackup(localStorage,data);({pins,decision,bookmarks,timer}=data);storageAvailable=true;render();$('backup-status').textContent='Desk restored. Your focus timer is paused and ready when you are.';}catch(error){$('backup-status').textContent=error.message;}finally{event.target.value='';}};

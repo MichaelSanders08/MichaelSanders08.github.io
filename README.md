@@ -59,3 +59,7 @@ Timer completion appears while the page is open; this is not a background notifi
 GitHub Pages serves `main` at the repository root. The previous homepage is preserved at [`archive.html`](archive.html); the original course essays, project pages, assets, CSS, and scripts remain at their existing paths. The separate `personal-website` project is unchanged.
 
 Contrast definitions follow [W3C’s WCAG 2.2 guidance](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html). The starter reference shelf links to the primary documentation or authored sources themselves.
+
+## Carry your desk between browsers
+
+Open **About & backup** to export pins, decision criteria/scores, references and focus intention together. Restore validates the whole file before replacing saved data and asks for confirmation. A storage failure attempts to restore all previous values and reports whether that succeeded. Timers are paused on export/restore; text and JSON drafts are deliberately excluded. Backups are ordinary JSON files you control.
